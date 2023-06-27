@@ -1,0 +1,15 @@
+# IDE files
+.idea/
+.vscode/
+
+# Compiled output
+lib/
+
+# Installed packages
+node_modules/
+
+# Temporary files
+.home/
+*-error.log
+.DS_Store
+*~

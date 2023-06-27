@@ -1,0 +1,52 @@
+{
+  "name": "serverless-plugin-monorepo2",
+  "version": "0.11.0",
+  "repository": "github:guhyeon/serverless-plugin-monorepo2",
+  "description": "Serverless plugin to allow use inside a JS monorepo with pnpm, yarn",
+  "keywords": [
+    "serverless",
+    "monorepo",
+    "workspace",
+    "workspaces"
+  ],
+  "author": "Jeon Guhyeon",
+  "homepage": "https://github.com/guhyeon/serverless-plugin-monorepo2",
+  "bugs": "https://github.com/guhyeon/serverless-plugin-monorepo2/issues",
+  "license": "MPL-2.0",
+  "main": "lib/index.js",
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "glob": "^10.3.0"
+  },
+  "peerDependencies": {
+    "serverless": "1 || 2 || 3"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.2",
+    "@types/node": "^14.14.6",
+    "@types/serverless": "^1.78.6",
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.0",
+    "typescript": "^4.0.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint:check": "yarn eslint . --ext .ts",
+    "lint:format": "prettier -l 'src/**/*.ts'",
+    "lint": "yarn lint:format && yarn lint:check"
+  },
+  "resolutions": {
+    "js-yaml": "^3.13.1",
+    "minimist": "1.2.5"
+  },
+  "files": [
+    "lib/index.js",
+    "src/index.ts"
+  ]
+}
