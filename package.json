@@ -1,6 +1,6 @@
 {
   "name": "serverless-plugin-monorepo3",
-  "version": "0.11.0",
+  "version": "0.11.1",
   "repository": "github:guhyeon/serverless-plugin-monorepo3",
   "description": "Serverless plugin to allow use inside a JS monorepo with pnpm, yarn",
   "keywords": [
