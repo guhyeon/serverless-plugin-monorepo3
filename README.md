@@ -1,8 +1,8 @@
-# serverless-plugin-monorepo2
+# serverless-plugin-monorepo3
 
 [![TypeScript](https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg)](http://www.typescriptlang.org/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-[![NPM Package](https://img.shields.io/npm/v/serverless-plugin-monorepo.svg)](https://www.npmjs.com/package/serverless-plugin-monorepo)
+[![NPM Package](https://img.shields.io/npm/v/serverless-plugin-monorepo.svg)](https://www.npmjs.com/package/serverless-plugin-monorepo3)
 
 From serverless-plugin-monorepo. Because it is not managed and does not support pnpm.
 
@@ -16,7 +16,7 @@ This plugin alleviates the need to use [nohoist](https://yarnpkg.com/blog/2018/0
 symlinks to all declared dependencies. Development dependencies are deliberately NOT linked so these
 will not be packaged into the resulting archive.
 
-if you use pnpm workspace you needs some additional settings, see below please.
+if you use pnpm workspace you need some additional settings, see below please.
 
 Not using nohoist saves wasting disk space and also accidentally including
 development dependencies in our packaged functions.
@@ -28,11 +28,11 @@ development dependencies in our packaged functions.
 ## Installation
 
 ```
-yarn add --dev serverless-plugin-monorepo2
+yarn add --dev serverless-plugin-monorepo3
 # or using NPM
-npm install --dev serverless-plugin-monorepo2
+npm install --dev serverless-plugin-monorepo3
 # or using pnpm
-pnpm install --save-dev serverless-plugin-monorepo2
+pnpm install --save-dev serverless-plugin-monorepo3
 ```
 
 Currently this plugin requires Node V10+. If there is interest in support older
@@ -45,7 +45,7 @@ Add the plugin to your `serverless.yml` file:
 
 ```
 plugins:
-  - serverless-plugin-monorepo
+  - serverless-plugin-monorepo3
 ```
 
 The plugin listens for package lifecycle events. Prior to Serverless packaging
@@ -80,8 +80,8 @@ There is a small `run` script which will launch Node V14 in a Docker container w
 you may find useful for development purposes.
 
 Note we are using [Prettier](https://prettier.io/) with [Typescript ESLint](https://github.com/typescript-eslint/typescript-eslint) and you can run
-the lint tool via `yarn lint` which will attempt to automatically issues like spacing etc.
+the lint tool via `pnpm lint` which will attempt to automatically issues like spacing etc.
 
 ## Copyright
 
-Copyright [Butterwire Limited](https://www.butterwire.com) 2018 - 2020
+Copyright [Blocksmith Limited](https://www.blocksmith.xyz) 2023-2026

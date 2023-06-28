@@ -1,17 +1,19 @@
 {
-  "name": "serverless-plugin-monorepo2",
+  "name": "serverless-plugin-monorepo3",
   "version": "0.11.0",
-  "repository": "github:guhyeon/serverless-plugin-monorepo2",
+  "repository": "github:guhyeon/serverless-plugin-monorepo3",
   "description": "Serverless plugin to allow use inside a JS monorepo with pnpm, yarn",
   "keywords": [
     "serverless",
     "monorepo",
     "workspace",
-    "workspaces"
+    "workspaces",
+    "serverless pnpm",
+    "serverless yarn"
   ],
   "author": "Jeon Guhyeon",
-  "homepage": "https://github.com/guhyeon/serverless-plugin-monorepo2",
-  "bugs": "https://github.com/guhyeon/serverless-plugin-monorepo2/issues",
+  "homepage": "https://github.com/guhyeon/serverless-plugin-monorepo3",
+  "bugs": "https://github.com/guhyeon/serverless-plugin-monorepo3/issues",
   "license": "MPL-2.0",
   "main": "lib/index.js",
   "dependencies": {
